@@ -1,0 +1,13 @@
+.text {
+  margin-bottom: 0rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.text-small {
+  font-size: 1.15rem;
+}
+
+.bg-green {
+  background-color: #83bf54;
+}
