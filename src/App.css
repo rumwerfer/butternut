@@ -1,13 +1,48 @@
 .text {
+  text-align: center;
+}
+
+.text-header {
   margin-bottom: 0rem;
   line-height: 1;
-  text-align: center;
 }
 
 .text-small {
   font-size: 1.15rem;
 }
 
+.text-teaser, .text-teaser:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.text-tag {
+  background-color: #83bf54;
+  color: floralwhite;
+  font-weight: 500;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.text-teaser-heading {
+  font-size: 1.5rem;
+}
+
 .bg-green {
   background-color: #83bf54;
+}
+
+.img-teaser {
+  width: 8.5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.teaser {
+  width: 18rem;
+  margin: 0 auto;
+}
+
+.teaser-body {
+  margin: 0.8rem auto auto auto;  
 }

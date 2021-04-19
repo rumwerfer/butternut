@@ -8,8 +8,8 @@ class Header extends Component {
       <Navbar expand="md" variant="dark" className="pt-0 bg-green">
         <div className="container">
           <Navbar.Brand>
-            <h1 className="text">Butternut</h1>
-            <p className="text text-small">simple vegan recipes</p>  
+            <h1 className="text text-header">Butternut</h1>
+            <p className="text text-header text-small">simple vegan recipes</p>  
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
