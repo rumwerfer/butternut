@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Header from './HeaderComponent';
+import List from './ListComponent';
+import Recipe from './RecipeComponent';
 
 class Main extends Component {
   render() {
     return (
       <div>
-        <h1>Butternut</h1>
-        <h3>simple vegan recipes</h3>  
+        <Header />
+        <Switch>
+          <Route exact path="/" component={ () => <List />} />
+          <Route path="/:id" component={ ({match}) => <Recipe id={match.params.id} /> } />
+          <Redirect to="/" />
+        </Switch>
       </div>
     );
   }
