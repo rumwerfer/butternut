@@ -7,21 +7,23 @@ import Badge from 'react-bootstrap/Badge';
 
 class Teaser extends Component {
   render() {
+    const recipe = this.props.recipe;
+
     return (
       <Col sm={12} md={6} xl={4} className="mt-2 mb-2">
         <Card className="teaser">
-          <Link to={ `/${this.props.id}` } className="text-teaser">
+          <Link to={ `/${recipe.id}` } className="text-teaser">
             <Row>
               <Card.Img
-                src="../assets/images/pizza.jpg"
+                src={"../assets/images/" + recipe.id + ".jpg"}
                 className="img-teaser"
               />
               <Card.Body class="teaser-body">
-                <h2 className="text text-teaser-heading">{this.props.name}</h2>
+                <h2 className="text text-teaser-heading">{recipe.name}</h2>
                 <div className="tags">
-                  <Badge pill className="text text-tag">tag1</Badge>
-                  <Badge pill className="text text-tag">tag2</Badge>
-                  <Badge pill className="text text-tag">tag3</Badge>
+                  {recipe.tags.sort().map(
+                    tag => <Badge pill className="text text-tag">{tag}</Badge>
+                  )}
                 </div>
               </Card.Body>
             </Row>

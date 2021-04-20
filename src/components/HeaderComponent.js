@@ -4,6 +4,12 @@ import Nav from 'react-bootstrap/Nav';
 
 class Header extends Component {
   render() {
+
+    // gather tags from all recipes
+    let allTags = new Set();
+    this.props.recipes.map(recipe => recipe.tags.map(tag => allTags.add(tag)));
+    let tags = new Array(...allTags).sort();
+
     return (
       <Navbar expand="md" variant="dark" className="pt-0 bg-green">
         <div className="container">
@@ -14,15 +20,7 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
             <Nav className="ml-auto">
-              <Nav.Link>
-                filters
-              </Nav.Link>
-              <Nav.Link>
-                go
-              </Nav.Link>
-              <Nav.Link>
-                here
-              </Nav.Link>
+              {tags.map(tag => <Nav.Link>{tag}</Nav.Link>)}
             </Nav>
           </Navbar.Collapse>
         </div>
