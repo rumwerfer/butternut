@@ -22,7 +22,7 @@ class Teaser extends Component {
                 <h2 className="text text-teaser-heading">{recipe.name}</h2>
                 <div className="tags">
                   {recipe.tags.sort().map(
-                    tag => <Badge pill className="text text-tag">{tag}</Badge>
+                    tag => <Badge pill className="text text-tag text-tag-small">{tag}</Badge>
                   )}
                 </div>
               </Card.Body>
