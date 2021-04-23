@@ -12,7 +12,7 @@ class Teaser extends Component {
     return (
       <Col sm={12} md={6} xl={4} className="mt-2 mb-2">
         <Card className="teaser">
-          <Link to={ `/${recipe.id}` } className="text-teaser">
+          <Link to={ `/r/${recipe.id}` } className="text-teaser">
             <Row>
               <Card.Img
                 src={"../assets/images/" + recipe.id + ".jpg"}

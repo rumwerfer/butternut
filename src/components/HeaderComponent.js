@@ -20,7 +20,11 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
             <Nav className="ml-auto">
-              {tags.map(tag => <Nav.Link>{tag}</Nav.Link>)}
+              {tags.map(tag =>
+                <Nav.Link eventKey={tag} onSelect={() => this.props.setFilter(tag)}>
+                  {tag}
+                </Nav.Link>
+              )}
             </Nav>
           </Navbar.Collapse>
         </div>
