@@ -13,17 +13,19 @@ class Header extends Component {
     return (
       <Navbar expand="md" variant="dark" className="pt-0 bg-green">
         <div className="container">
-          <Navbar.Brand>
+          <Navbar.Brand onClick={() => this.props.setFilter(null)} className="link">
             <h1 className="text text-header">Butternut</h1>
             <p className="text text-header text-small">simple vegan recipes</p>  
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
-            <Nav className="ml-auto">
+            <Nav className="ml-auto" activeKey={this.props.filter}>
               {tags.map(tag =>
-                <Nav.Link eventKey={tag} onSelect={() => this.props.setFilter(tag)}>
-                  {tag}
-                </Nav.Link>
+                <Nav.Item>
+                  <Nav.Link eventKey={tag} onSelect={() => this.props.setFilter(tag)}>
+                    {tag}
+                  </Nav.Link>
+                </Nav.Item>
               )}
             </Nav>
           </Navbar.Collapse>

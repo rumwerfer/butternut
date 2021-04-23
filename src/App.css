@@ -74,3 +74,7 @@
   max-width: 800px;
   height: auto;
 }
+
+.link {
+  cursor: pointer;
+}

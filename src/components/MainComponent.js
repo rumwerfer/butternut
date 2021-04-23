@@ -24,7 +24,7 @@ class Main extends Component {
   render() {
     return (
       <div>
-        <Header recipes={recipes} setFilter={this.setFilter} />
+        <Header recipes={recipes} setFilter={this.setFilter} filter={this.state.filter}/>
         <Switch>
           <Route
             exact path="/"
