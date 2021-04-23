@@ -3,13 +3,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
 class Header extends Component {
-  render() {
 
-    // gather tags from all recipes
+  // gather tags from all recipes
+  getTags() {
     let allTags = new Set();
     this.props.recipes.map(recipe => recipe.tags.map(tag => allTags.add(tag)));
-    let tags = new Array(...allTags).sort();
-
+    return new Array(...allTags).sort();
+  }
+  
+  render() {
     return (
       <Navbar expand="md" variant="dark" className="pt-0 bg-green">
         <div className="container">
@@ -20,7 +22,7 @@ class Header extends Component {
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
             <Nav className="ml-auto" activeKey={this.props.filter}>
-              {tags.map(tag =>
+              {this.getTags().map(tag =>
                 <Nav.Item>
                   <Nav.Link eventKey={tag} onSelect={() => this.props.setFilter(tag)}>
                     {tag}
