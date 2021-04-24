@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/butternut/static/css/main.dd050839.chunk.css",
-    "main.js": "/butternut/static/js/main.4259192e.chunk.js",
-    "main.js.map": "/butternut/static/js/main.4259192e.chunk.js.map",
+    "main.js": "/butternut/static/js/main.ba4a9781.chunk.js",
+    "main.js.map": "/butternut/static/js/main.ba4a9781.chunk.js.map",
     "runtime-main.js": "/butternut/static/js/runtime-main.313a3932.js",
     "runtime-main.js.map": "/butternut/static/js/runtime-main.313a3932.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/butternut/static/css/2.4c97ca4f.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.bbc55dff.chunk.js",
     "static/css/main.dd050839.chunk.css",
-    "static/js/main.4259192e.chunk.js"
+    "static/js/main.ba4a9781.chunk.js"
   ]
 }
