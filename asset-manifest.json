@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/butternut/static/css/main.dd050839.chunk.css",
+    "main.js": "/butternut/static/js/main.8930ee57.chunk.js",
+    "main.js.map": "/butternut/static/js/main.8930ee57.chunk.js.map",
+    "runtime-main.js": "/butternut/static/js/runtime-main.313a3932.js",
+    "runtime-main.js.map": "/butternut/static/js/runtime-main.313a3932.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/butternut/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.bbc55dff.chunk.js": "/butternut/static/js/2.bbc55dff.chunk.js",
+    "static/js/2.bbc55dff.chunk.js.map": "/butternut/static/js/2.bbc55dff.chunk.js.map",
+    "static/js/3.f097d8fb.chunk.js": "/butternut/static/js/3.f097d8fb.chunk.js",
+    "static/js/3.f097d8fb.chunk.js.map": "/butternut/static/js/3.f097d8fb.chunk.js.map",
+    "index.html": "/butternut/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/butternut/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.dd050839.chunk.css.map": "/butternut/static/css/main.dd050839.chunk.css.map",
+    "static/js/2.bbc55dff.chunk.js.LICENSE.txt": "/butternut/static/js/2.bbc55dff.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.313a3932.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.bbc55dff.chunk.js",
+    "static/css/main.dd050839.chunk.css",
+    "static/js/main.8930ee57.chunk.js"
+  ]
+}
