@@ -50,7 +50,7 @@ class Recipe extends Component {
         </Row>
         <Row className="mt-3">
           <Col xs={12} lg={{span: 10, offset: 1}} xl={{span: 8, offset: 2}}>
-            <Image src={"../assets/images/" + recipe.id + ".jpg"} fluid rounded />
+            <Image src={process.env.PUBLIC_URL + "/assets/images/" + recipe.id + ".jpg"} fluid rounded />
             <p><small>
               Image: <a href={recipe.imgSource} target="_blank" rel="noreferrer">{recipe.imgAuthor}</a> ({recipe.imgLicense})
             </small></p>

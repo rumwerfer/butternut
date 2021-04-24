@@ -15,7 +15,7 @@ class Teaser extends Component {
           <Link to={ `/r/${recipe.id}` } className="text-teaser">
             <Row>
               <Card.Img
-                src={"../assets/images/" + recipe.id + ".jpg"}
+                src={process.env.PUBLIC_URL + "/assets/images/" + recipe.id + ".jpg"}
                 className="img-teaser"
               />
               <Card.Body class="teaser-body">
