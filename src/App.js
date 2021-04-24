@@ -4,7 +4,7 @@ import Main from './components/MainComponent';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Main />
     </BrowserRouter>
   );
