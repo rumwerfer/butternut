@@ -5,6 +5,10 @@ import Row from 'react-bootstrap/Row';
 import recipes from '../shared/recipes';
 
 class List extends Component {
+
+  componentDidMount() {
+    document.title = 'Recipes | Butternut';
+  }
   
   filterRecipes(filter = this.props.filter) {
     return filter

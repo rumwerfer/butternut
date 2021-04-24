@@ -10,6 +10,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 class Recipe extends Component {
+
+  componentDidMount() {
+    document.title = this.props.recipe.name + ' | Butternut';
+  }
+
   render() {
     const recipe = this.props.recipe;
 
